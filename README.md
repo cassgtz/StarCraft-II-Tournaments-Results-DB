@@ -8,13 +8,15 @@ You will realize a practical database design and implementation based on a given
 
 
 The tasks that you will accomplish in this project are as follows: 
-\item design a database based on a given dataset
-\item convert design into schemas
-\item create a database using DDL statements in the mysql command line tool 
-\item populate the database row-by-row (in loops) from provided raw data using JDBC 
-\item write SQL queries to the database to be executed from the mysql command line tool 
-\item query and manipulate the database programmatically using JDBC 
-\item completely remove all traces of your database from the DBMS 
+\begin{itemize}
+\item {design a database based on a given dataset}
+\item {convert design into schemas}
+\item {create a database using DDL statements in the mysql command line tool}
+\item {populate the database row-by-row (in loops) from provided raw data using JDBC}
+\item {write SQL queries to the database to be executed from the mysql command line tool}
+\item {query and manipulate the database programmatically using JDBC}
+\item {completely remove all traces of your database from the DBMS}
+\end{itemize}
 
 In short, StarCraft II is a popular video game that allows top players to make tons of money through tournaments. Your job is to implement a database backend for a tournament results tracker using MySQL.
 
@@ -29,13 +31,14 @@ Once your schema has been validated, prepare and submit a createdbYOURNAME.sql f
 
 ### Part 3: Inserting data to the database through JDBC
 You will be given the following files, which contain data for the respective tables you created.
- 
-\item players.csv
-\item teams.csv
-\item members.csv
-\item tournaments.csv
-\item matches.csv
-\item earnings.csv
+\begin{itemize}
+\item{players.csv}
+\item{teams.csv}
+\item{members.csv}
+\item{tournaments.csv}
+\item{matches.csv}
+\item{earnings.csv}
+\end{itemize}
 These are standard comma-separated value files, which you may open and examine using any standard text editor. Observe that each row represents one record, and fields are comma-separated. You need to examine these data to make sure that you define the constraints of certain attributes - such as not null, on default.
 You are required to implement a set of Java programs that accept table name and csv file names as command line arguments, open and parse each file and insert the data contained within them into your database. For each table and each csv file, create a separate .java file to parse each file and insert into its corresponding table. In this case, you will need to create 6 java files and name them as follows:
 \item PlayersInsert.java
