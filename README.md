@@ -25,7 +25,7 @@ Obviously, such a system will need to keep track of various players; each player
 I will provide you with a small sample of the dataset. Design the database schema. Start with an E/R diagram and convert it to a relational schema. Identify any constraints that hold in your application domain, and code them as database constraints. It is important to go over the samples of real data to validate your design. Do not forget to apply database design theory and check for redundancies. 
 
 ### Part 2: Creating the database tables in MySQL
-Once your schema has been validated, prepare and submit a createdbYOURNAME.sql file containing SQL statements that will create a database ResultTrackerYOURNAME containing the tables listed in your schema. Primary keys and foreign keys must be implemented. Choose the most appropriate data type for each field by referring to the domain description and consulting the sample data first.
+Once your schema has been validated, prepare and submit a createDatabaseQueries.sql file containing SQL statements that will create a database ResultTrackerYOURNAME containing the tables listed in your schema. Primary keys and foreign keys must be implemented. Choose the most appropriate data type for each field by referring to the domain description and consulting the sample data first.
 
 ### Part 3: Inserting data to the database through JDBC
 You will be given the following files, which contain data for the respective tables you created.
@@ -35,6 +35,8 @@ You will be given the following files, which contain data for the respective tab
 * tournaments.csv
 * matches.csv
 * earnings.csv
+
+
 These are standard comma-separated value files, which you may open and examine using any standard text editor. Observe that each row represents one record, and fields are comma-separated. You need to examine these data to make sure that you define the constraints of certain attributes - such as not null, on default.
 You are required to implement a set of Java programs that accept table name and csv file names as command line arguments, open and parse each file and insert the data contained within them into your database. For each table and each csv file, create a separate .java file to parse each file and insert into its corresponding table. In this case, you will need to create 6 java files and name them as follows:
 * PlayersInsert.java
