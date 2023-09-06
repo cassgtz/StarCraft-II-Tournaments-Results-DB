@@ -8,15 +8,13 @@ You will realize a practical database design and implementation based on a given
 
 
 The tasks that you will accomplish in this project are as follows: 
-\begin{itemize}
-\item {design a database based on a given dataset}
-\item {convert design into schemas}
-\item {create a database using DDL statements in the mysql command line tool}
-\item {populate the database row-by-row (in loops) from provided raw data using JDBC}
-\item {write SQL queries to the database to be executed from the mysql command line tool}
-\item {query and manipulate the database programmatically using JDBC}
-\item {completely remove all traces of your database from the DBMS}
-\end{itemize}
+* design a database based on a given dataset
+* convert design into schemas
+* create a database using DDL statements in the mysql command line tool
+* populate the database row-by-row (in loops) from provided raw data using JDBC
+* write SQL queries to the database to be executed from the mysql command line tool
+* query and manipulate the database programmatically using JDBC
+* completely remove all traces of your database from the DBMS
 
 In short, StarCraft II is a popular video game that allows top players to make tons of money through tournaments. Your job is to implement a database backend for a tournament results tracker using MySQL.
 
@@ -31,22 +29,20 @@ Once your schema has been validated, prepare and submit a createdbYOURNAME.sql f
 
 ### Part 3: Inserting data to the database through JDBC
 You will be given the following files, which contain data for the respective tables you created.
-\begin{itemize}
-\item{players.csv}
-\item{teams.csv}
-\item{members.csv}
-\item{tournaments.csv}
-\item{matches.csv}
-\item{earnings.csv}
-\end{itemize}
+* players.csv
+* teams.csv
+* members.csv
+* tournaments.csv
+* matches.csv
+* earnings.csv
 These are standard comma-separated value files, which you may open and examine using any standard text editor. Observe that each row represents one record, and fields are comma-separated. You need to examine these data to make sure that you define the constraints of certain attributes - such as not null, on default.
 You are required to implement a set of Java programs that accept table name and csv file names as command line arguments, open and parse each file and insert the data contained within them into your database. For each table and each csv file, create a separate .java file to parse each file and insert into its corresponding table. In this case, you will need to create 6 java files and name them as follows:
-\item PlayersInsert.java
-\item TeamsInsert.java
-\item TournamentsInsert.java
-\item MatchesInsert.java
-\item EarningsInsert.java
-\item MembersInsert.java
+* PlayersInsert.java
+* TeamsInsert.java
+* TournamentsInsert.java
+* MatchesInsert.java
+* EarningsInsert.java
+* MembersInsert.java
 
 You should use the JDBC PreparedStatement for greater efficiency as compared to the more generic Statement class and to reduce the risk of SQL injection.
 
@@ -70,11 +66,15 @@ Q6. List all teams founded before 2011 that are still active (not yet disbanded)
 You are required to implement a Java program FinalProjectQueryYOURNAME.java that provides the capability to run queries on the system and display results in the console.
 Q1. Given a year and month, provide the real name, tag, nationality and the number of wins of players who were born in that month and that year. 
 For example, the following run command should find players who were born in May 1990 and print the results to the screen in the given format. 
-java FinalProjectQuery q1 1990 05
+
+
+	java FinalProjectQuery q1 1990 05
 Output:
 	
 	Young Jin Kim, SuperNova, KR, 7
 	...
+
+
 Q2. Given a player id and a team id, add that player as a member of the specified team, with the start date set according to the current system time. If the player is currently a member of another team, the database should also be updated to reflect their departure from the “old” team, with the end date set as above. If the player was already a current member of the given “new” team, no changes are necessary. 
 For example, the following run statement should add player 1660 as a member of team 35, if they were not already a member of that team. If player 1660 is presently a member of a different team, that membership record must be updated as well. 
 	
