@@ -1,5 +1,5 @@
 # StarCraft-II-Tournaments-Results-DB
-This is a database designed for tracking various StarCraft II tournament results. The goal of the project was to design and build a database with a given dataset from scratch, then write a series of complex SQL statements to retrieve data.
+This is a database designed for tracking various StarCraft II tournament results. The databse is called ResultTrackerCASSANDRA. The goal of the project was to design and build a database with a given dataset from scratch, then write a series of complex SQL statements to retrieve data.
 
 ## Project instructions:
 
