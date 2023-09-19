@@ -72,6 +72,9 @@ Q6. List all teams founded before 2011 that are still active (not yet disbanded)
 
 ### Part 5: Querying the database using JDBC 
 You are required to implement a Java program FinalProjectQueryYOURNAME.java that provides the capability to run queries on the system and display results in the console.
+
+
+
 Q1. Given a year and month, provide the real name, tag, nationality and the number of wins of players who were born in that month and that year. 
 For example, the following run command should find players who were born in May 1990 and print the results to the screen in the given format. 
 
@@ -81,6 +84,7 @@ Output:
 	
 	Young Jin Kim, SuperNova, KR, 7
 	...
+
 
 
 Q2. Given a player id and a team id, add that player as a member of the specified team, with the start date set according to the current system time. If the player is currently a member of another team, the database should also be updated to reflect their departure from the “old” team, with the end date set as above. If the player was already a current member of the given “new” team, no changes are necessary. 
